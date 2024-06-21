@@ -1,0 +1,791 @@
+:root {
+    --mainColor : #252734;
+    --secondaryColor : #333646;
+    --acsentColor : #ff184c;
+}
+
+@media screen and (max-width: 991px) {
+
+
+    /* Home */
+    #home {
+        margin-top: 30px;
+        margin-bottom: 40px;
+        min-height: 95vh;
+        width: 100%;
+    }
+
+    #home .btn-custom1 {
+        margin-top: 20px;
+    }
+
+    section .profil {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+    /* Home End */
+
+    /* About */
+    section#about .content {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .hr {
+        width: 50%;
+    }
+    /* About End */
+
+    /* Skill */
+    #skill {
+        min-height: 85vh;
+        width: 100%;
+    }
+
+    #skill img {
+        width: 10%;
+    }
+
+    .skill-konten {
+        margin-top: 40px;
+    }
+
+    #skill .card {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+    /* Skill End */
+
+    /* Contact */
+    .contact {
+        min-height: 100vh;
+        width: 100%;
+        padding: 20px 8%;
+    }
+
+    .contact h1 {
+        margin-top: 40%;
+    }
+
+    .contact form .input-group {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .contact form .input-box {
+        width: 100%;
+    }
+
+    .contact form .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact form textarea {
+        width: 100%;
+    }
+    /* Contact End */
+
+    /* Footer */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .social {
+        padding-bottom: 15px;
+    }
+
+    footer ul {
+        font-size: 16px;
+    }
+
+    footer ul li {
+        padding: 0 10px;
+    }
+
+    footer .copyright {
+        margin-top: 30px;
+    }
+    /* Footer End */
+}
+
+@media screen and (max-width: 767px) {
+   /* Navbar */
+    .nav-menu {
+        position: fixed;
+        right: -100%;
+        top: 3.8rem;
+        flex-direction: column;
+        /* background-color: #fff; */
+        background-color: var(--mainColor);
+        /* backdrop-filter: blur(10px); */
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        align-items: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-link {
+        color: #fff;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .nav-item {
+        margin-top: 1rem ;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 4.5rem;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 1rem; 
+        right: 1rem; /* Atur jarak dari kanan sesuai kebutuhan */
+        z-index: 1000; /* Pastikan tombol berada di atas elemen lainnya */
+        cursor: pointer;
+        margin-right: 8%;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    /* Navbar End */
+
+    /* Home */
+    #home {
+        padding-top: 40px; /* Reduce top padding for smaller screens */
+        padding-bottom: 40px; /* Reduce bottom padding for smaller screens */
+        margin-bottom: 40px; /* Reduce bottom margin for smaller screens */
+    }
+
+    .home-content {
+        text-align: center; /* Center align content on smaller screens */
+    }
+
+    #home .btn-custom1 {
+        margin-top: 20px; /* Adjust margin-top for button */
+    }
+
+    section .profil {
+        width: 100%; /* Make profile image responsive */
+        height: auto;
+        max-width: 300px; /* Limit max width of profile image */
+        margin-top: 20px; /* Add margin-top for spacing */
+    }
+    /* Home End */
+
+    /* About */
+    /* section#about .about { */
+        /* padding-top: 50px; Reduce top padding */
+        /* padding-bottom: 50px; Reduce bottom padding */
+        /* margin-bottom: 50px; Reduce bottom margin */
+    /* } */
+
+    section#about .content {
+        font-size: 1rem; /* Decrease font size for better readability */
+        text-align: justify; /* Center align text */    
+    }
+
+    .hr {
+        width: 50%; /* Reduce width of HR */
+    }
+    /* About End */
+
+    /* Skill */
+    #skill {
+        min-height: 85vh;
+        width: 100%;
+    }
+
+    #skill img {
+        width: 10%; /* Increase image size for better visibility on smaller screens */
+    }
+
+    .skill-konten {
+        margin-top: 40px; /* Reduce top margin for smaller screens */
+            
+    }
+
+    #skill .card {
+        width: 90%; /* Make the cards wider */
+        margin: 0 auto 20px; /* Center align cards and add bottom margin */
+    }
+    /* Skill End */
+
+    /* Contact */
+    .contact {
+        min-height: 100vh;
+        width: 100%;
+        padding: 20px 8%;
+        /* padding-top: 20px;
+        margin-top: 10%; */
+    }
+
+    .contact h1{
+        /* padding-top: 40px; */
+        margin-top: 40%;
+    }
+
+    .contact form .input-group {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .contact form .input-box {
+        width: 100%;
+    }
+
+    .contact form .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .contact form textarea {
+        width: 100%;
+    }
+    /* Contact End */
+    
+    /* Footer */
+    footer {
+        padding: 20px 0;
+    }
+
+    footer .social {
+        padding-bottom: 15px;
+    }
+
+    footer ul {
+        font-size: 16px;
+    }
+
+    footer ul li {
+        padding: 0 10px;
+    }
+
+    footer .copyright {
+        margin-top: 30px;
+    }
+    /* Footer End */
+}
+
+@media screen and (max-width: 576px) {
+    /* Navbar */
+    .nav-logo{
+        font-size: 1.2rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+     .nav-menu {
+         position: fixed;
+         right: -100%;
+         /* top: 3.8rem; */
+         flex-direction: column;
+         background-color: var(--mainColor);
+         width: 100%;
+         border-radius: 10px;
+         text-align: center;
+         align-items: center;
+         transition: 0.3s;
+         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+     }
+ 
+     .nav-link {
+         color: #fff;
+     }
+ 
+     .nav-menu.active {
+         left: 0;
+         text-decoration: none;
+         list-style: none;
+     }
+ 
+     .nav-item {
+         margin-top: 1rem;
+         margin-left: 0;
+         margin-right: 3.5rem;
+     }
+ 
+     .hamburger {
+         display: block;
+         cursor: pointer;
+         position: fixed;
+         top: 1rem; 
+         right: 1rem;
+         z-index: 1000;
+         cursor: pointer;
+         margin-right: 5%;
+     }
+ 
+     .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+     }
+ 
+     .hamburger.active .bar:nth-child(1) {
+         transform: translateY(6px) rotate(45deg);
+     }
+ 
+     .hamburger.active .bar:nth-child(3) {
+         transform: translateY(-6px) rotate(-45deg);
+     }
+
+     .bar {
+         display: block;
+         width: 18px;
+         height: 2px;
+         margin: 4px auto;
+         -webkit-transition: all 0.3s ease-in-out;
+         transition: all 0.3s ease-in-out;
+         /* background-color: #101010; */
+         background-color: #fff;
+     }
+
+     .nav-item a{
+        font-size: 1rem;
+        margin-left: 2.5rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-item a:hover,
+    .nav-item a.active{
+        color: var(--acsentColor);
+        border-bottom: 3px solid var(--acsentColor);
+    }
+     /* Navbar End */
+ 
+     /* Home */
+     #home {
+        color: white;
+        padding-right: 20px;
+        padding-left: 20px;
+        min-height: 95vh;
+        padding-top: 5px;
+    }
+    
+    #home h1{
+        font-size: 1.8rem;
+    }
+    
+    #home h2{
+        font-weight: 300;
+    }
+    
+    #home p{
+        font-size: 1rem;
+        font-weight: 300;
+    }
+ 
+    .home-content {
+         text-align: center;
+        
+     }
+
+     #home .btn-custom1{
+        background-color: var(--acsentColor);
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        min-width: 80px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+     section .profil {
+         width: 100%;
+         height: auto;
+         max-width: 280px;
+     }
+     /* Home End */
+ 
+     /* About */
+     section#about .content {
+         font-size: 0.9rem;
+         text-align: justify;
+         align-content: justify; 
+         align-items: justify; 
+     }
+
+     #about h1 {
+         font-size: 1.8rem;
+     }
+ 
+     .hr {
+         width: 50%;
+     }
+     /* About End */
+ 
+     /* Skill */
+     #skill {
+         min-height: 150vh;
+         width: 100%;
+     }
+
+     #skill h1 {
+         font-size: 1.8rem;
+     }
+ 
+     #skill img {
+         width: 15%;
+     }
+
+     .card-group1 {
+         margin-bottom: 20px;
+     }
+ 
+     .skill-konten {
+         margin-top: 40px;  
+     }
+ 
+     #skill .card {
+         width: 100%;
+         margin: 0 auto 15px;
+     }
+     /* Skill End */
+ 
+     /* Contact */
+    .contact h1{
+        /* padding-top: 40px; */
+        margin-top: 40%;
+    }
+
+     .contact {
+         min-height: 100vh;
+         width: 100%;
+         padding: 20% 8%;
+     }
+ 
+     .contact form .input-group {
+         padding-top: 15px;
+         flex-direction: column;
+     }
+ 
+     .contact form .input-box {
+         width: 100%;
+     }
+ 
+     .contact form .btn {
+         width: 100%;
+         padding: 0.8rem;
+     }
+ 
+     .contact form textarea {
+         width: 100%;
+     }
+     /* Contact End */
+     
+     /* Footer */     
+    footer .social a {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+        width: 36px; /* Adjusted width for smaller icons */
+        height: 36px; /* Adjusted height for smaller icons */
+        line-height: 36px; /* Adjusted line height */
+        margin: 0 8px; /* Adjusted margin */
+    }
+
+    footer ul {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    footer ul li {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    footer .copyright {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        margin-top: 30px; /* Adjusted margin top */
+    }
+}
+     /* Footer End */
+
+
+@media screen and (max-width: 375px) {
+    /* Navbar */
+    .nav-logo{
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+
+     .nav-menu {
+         position: fixed;
+         right: -100%;
+         top: 3.8rem;
+         flex-direction: column;
+         background-color: var(--mainColor);
+         width: 100%;
+         border-radius: 10px;
+         text-align: center;
+         align-items: center;
+         transition: 0.3s;
+         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+     }
+ 
+     .nav-link {
+         color: #fff;
+     }
+ 
+     .nav-menu.active {
+         left: 0;
+         text-decoration: none;
+         list-style: none;
+     }
+ 
+     .nav-item {
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+         margin-left: 0;
+         margin-right: 3.5rem;
+     }
+ 
+     .hamburger {
+         display: block;
+         cursor: pointer;
+         position: fixed;
+         top: .9rem; 
+         right: .9rem;
+         z-index: 1000;
+         cursor: pointer;
+         margin-right: 5%;
+     }
+ 
+     .hamburger.active .bar:nth-child(2) {
+         opacity: 0;
+     }
+ 
+     .hamburger.active .bar:nth-child(1) {
+         transform: translateY(6px) rotate(45deg);
+     }
+ 
+     .hamburger.active .bar:nth-child(3) {
+         transform: translateY(-6px) rotate(-45deg);
+     }
+
+     .bar {
+         display: block;
+         width: 18px;
+         height: 2px;
+         margin: 4px auto;
+         -webkit-transition: all 0.3s ease-in-out;
+         transition: all 0.3s ease-in-out;
+         /* background-color: #101010; */
+         background-color: #fff;
+     }
+
+     .nav-item a{
+        font-size: .8rem;
+        margin-left: 2.5rem;
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: .3s ease;
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-item a:hover,
+    .nav-item a.active{
+        color: var(--acsentColor);
+        border-bottom: 3px solid var(--acsentColor);
+    }
+     /* Navbar End */
+ 
+     /* Home */
+    #home {
+        color: white;
+        min-height: 95vh;
+        padding-top: 40px;
+    }
+    
+    #home h1{
+        font-size: 1.5rem;
+    }
+    
+    #home h2{
+        font-weight: 300;
+    }
+    
+    #home p{
+        font-size: .9rem;
+        font-weight: 300;
+    }
+ 
+    .home-content {
+         text-align: center;
+        
+     }
+ 
+     section .profil {
+         width: 100%;
+         height: auto;
+         max-width: 200px;
+         margin-top: 10px;
+     }
+
+     #home .btn-custom1{
+        background-color: var(--acsentColor);
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        min-width: 80px;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: 10%;
+    }
+     
+     /* Home End */
+ 
+     /* About */
+    #about h1{
+        font-size: 1.5rem;
+    }    
+
+    section .about {
+        min-height: 100%;
+        width: auto;
+        background-color: var(--secondaryColor);
+        padding-top: 40px;
+        font-weight: 100;
+    } 
+
+    #about .content {  
+        font-size: .8rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        line-height: 1.5;
+        color: #fff;
+    }   
+
+     .hr {
+         width: 50%;
+     }
+     /* About End */
+ 
+     /* Skill */
+ /* Mengurangi ukuran teks paragraf */
+    #skill h1 {
+        font-size: 1.5rem; /* Sesuaikan ukuran teks sesuai kebutuhan */
+    }
+
+    #skill .card-body .card-text {
+        font-size: 12px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+    }
+
+    /* Mengurangi ukuran teks judul kartu */
+    #skill .card-body .card-title {
+        font-size: 16px; /* Sesuaikan ukuran teks sesuai kebutuhan */
+    }
+
+    /* Mengurangi ukuran gambar di dalam section skill */
+    #skill img {
+        width: 12%; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    }
+
+    /* Menyesuaikan margin dan padding */
+    #skill .card {
+        width: 100%; /* Perkecil lebar kartu */
+        height: auto; /* Biarkan tinggi kartu menyesuaikan dengan konten */
+        padding: 10px;
+    }
+
+    .skill-konten {
+        margin-top: 40px;
+        gap: 2%;
+    }
+
+    /* Menyesuaikan ukuran gambar di dalam kartu */
+    .card-img1, .card-img2 {
+        height: auto; /* Biarkan tinggi gambar menyesuaikan dengan konten */
+        width: 100%;
+    }
+     /* Skill End */
+ 
+     /* Contact */
+     .contact h1 {
+        font-size: 1.5rem; /* Further reduced font size */
+    }
+
+    .contact form .input-box input,
+    .contact form textarea{
+        width: 85%;
+        /* padding: 1rem; */
+        font-size: .5rem;
+        margin: 10px;
+
+    }
+
+    /* .contact form .btn {
+        font-size: 0.5rem; 
+        padding: .2rem 1rem; 
+        margin: 20px;
+    } */
+
+    .contact form .btn{
+        text-align: center;
+        margin-top: 1rem;
+        background-color: var(--acsentColor);
+        border-radius: 20px;
+        border: 2px solid var(--acsentColor);
+        color: #fff;
+        font-size: .8rem;
+        padding: .3rem 2rem;
+        cursor: pointer;
+    } 
+
+     /* Contact End */
+     
+     /* Footer */
+     footer .social a {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+        width: 36px; /* Adjusted width for smaller icons */
+        height: 36px; /* Adjusted height for smaller icons */
+        line-height: 36px; /* Adjusted line height */
+        margin: 0 8px; /* Adjusted margin */
+    }
+
+    footer ul {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    footer ul li {
+        padding: 0 10px; /* Adjusted padding for smaller screens */
+    }
+
+    footer .copyright {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+        margin-top: 30px; /* Adjusted margin top */
+    }
+     /* Footer End */
+ }
+ 
